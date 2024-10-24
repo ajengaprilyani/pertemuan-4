@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <style>
+        body {
+            background: radial-gradient(#FFFF, #FFC0CB);
+            font-family: 'Lucida Sans', sans-serif;
+        }
+        .h1{
+            text-align: center;
+            font-family: 'Lucida Sans', sans-serif;
+            margin-top: 1px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 1px;
+        }
+        .photo-wrapper {
+            width: 200px;
+            height: 200px;
+            border: 4px solid pink;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid pink;
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        .info-table {
+            width: 450px;
+            background-color: #FFC0CB;
+            padding: 10px;
+            border-radius: 9px;
+            box-shadow: 0px 1px 9px 5px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            border: 1px solid black;
+            width: 100%; /* Make table width responsive */
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px 12px;
+        }
+        td:first-child {
+            font-weight: bold;
+        }
+        .btn-simpan {
+            font-family: 'Lucida Sans', sans-serif;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: pink;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            font-size: 18px;
+            opacity: 0.3;
+            transition: 0.5s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn-simpan:hover {opacity: 1}
+            
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="h1">Biodata Mahasiswa</h1>
+    <div class="container">
+        <div class="photo-wrapper">
+            <div class="profile-pic">
+                <!-- Ganti 'fotoku.jpg' sesuai gambar -->
+                <img src="foto-ajeng.png" alt="Foto Profil">
+            </div>
+        </div>
+        <div class="info-table">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>Ajeng Aprilyani</td>
+                </tr>
+                <tr>
+                    <td>NIM</td>
+                    <td>:</td>
+                    <td>D212111023</td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td>Karawang</td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>:</td>
+                    <td>
+                        <ul>
+                            <li>Travelling</li>
+                            <li>Memasak</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button class="btn-simpan" onclick="simpanData()">Simpan</button>
+    </div>
+
+</body>
+</html>
